@@ -3,7 +3,7 @@
  width="800" 
  height="400">
 
-<br>It's again the day before reporting to your boss. Hundreds of thousands of tables and figures are smiling at you, evilly. You pray for rescue; just at that moment, suddenly, you reach this page. Congratulations! You've found AutoPPT, which ganna be your sharpest Knife for experiment reports of all time; following the synopsis below, it'll lead you to a new world. AutoPPT will safe your hand from the destruction caused by copy and paste.</br>
+<br>It's again the day before reporting to your boss. Hundreds of thousands of tables and figures are smiling at you, evilly. You pray for rescue; just at that moment, suddenly, you reach this page. Congratulations! You've found AutoPPT, which is gonna be your sharpest Knife for experiment reports of all time; following the synopsis below, it'll lead you to a new world!! Try it now, let AutoPPT saves your hands from destruction by copy and paste!!!</br>
 
 # synopsis
  <img src="./figure_for_readme/LOGO.PNG" alt="Italian Trulli" 
