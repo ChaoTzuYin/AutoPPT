@@ -10,9 +10,8 @@
  width="200" 
  height="100">
  
--Requirement：
-
-conda install -c conda-forge python-pptx
+<br>-Requirement：</br>
+`conda install -c conda-forge python-pptx` 
 
 -Usage：
 
@@ -22,7 +21,36 @@ conda install -c conda-forge python-pptx
 ‧新增圖片變數：使用圖形工具拉一個矩形，矩形中面設置變數名稱。
 ‧新增文字變數：使用文字工具拉一個文字方塊，方塊中設置變數名稱。
 
-2. Import ppt_recorder from auto_ppt_module.py and load the template silde. (Reference: the main function in "auto_ppt_module.py")
+2. Import ppt_recorder from auto_ppt_module.py and load the template silde. example:
+<code>
+from auto_ppt_module import ppt_recorder
+import numpy as np
+import io
+from PIL import Image
+import copy
+# Create ppt recorder given the reference template.
+writer = ppt_recorder(template='template_example.pptx')
+# Get the placeholders that you've created in the template file. 
+# Placeholders are formated in dictionary, in which the keys are repected to their name.
+ph = writer.placeholder()
+test_image1 = np.eye(128)
+test_image2 = np.random.uniform(low=0.0, high=1.0, size=[64,64,3])
+for i in range(3):
+    # Duplicate a set of formate respected to your template pptx file.
+    # You must include .new_record() in your code even if only one set of your template is needed in your report.
+    writer.new_record()
+    # Create a placeholder-data dictionary.
+    feed_dict={ph['text1']:'Hello World!_'+str(i), 
+             ph['pic1']:test_image1,
+             ph['pic2']:test_image2,
+             ph['text2']:"What's up, World?_"+str(i),
+             ph['pic3']:test_image1,
+             ph['pic4']:test_image2}
 
+    # Assign your data to pptx file.
+    writer.assign(feed_dict=feed_dict)
+#export pptx file.
+writer.to_pptx('result.pptx')
+</code>
 ‧文字輸入格式：str
 ‧圖片輸入格式：3D numpy array (W,H,C), which scaled in [0,1].
