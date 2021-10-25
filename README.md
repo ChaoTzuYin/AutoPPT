@@ -3,7 +3,7 @@
  width="800" 
  height="400">
 
-<br>It's again the day before reporting to your boss. Hundreds of thousands of tables and figures are smiling at you, evilly. You pray for rescue; just at that moment, suddenly, you reach this page. Congratulations! You've found AutoPPT, which ganna be your sharpest Knife for experiment reports of all time; following the synopsis below, it'll lead you to a new world. AutoPPT will save your hand from the destruction caused by copy and paste.</br>
+<br>It's again the day before reporting to your boss. Hundreds of thousands of tables and figures are smiling at you, evilly. You pray for rescue; just at that moment, suddenly, you reach this page. Congratulations! You've found AutoPPT, which ganna be your sharpest Knife for experiment reports of all time; following the synopsis below, it'll lead you to a new world. AutoPPT will safe your hand from the destruction caused by copy and paste.</br>
 
 # synopsis
  <img src="./figure_for_readme/LOGO.PNG" alt="Italian Trulli" 
@@ -16,10 +16,20 @@
 ## Usage： </br>
 
 ### 1.Create the template silde. (Please take the example template "template.pptx" as reference.)
+#### - How to set a placeholder: input #(variable name) in the block you want. The block will then transfer into a placeholder.
+#### - Adding image placeholder: Create a rectangluar block by the shape tool, and then set #(variable name) on it.
+#### - Adding word placeholder: Create a text box, and then set #(variable name) on it.
+#### - Constant: "Constant" here represents all the other design which are not belong to placeholder. Constant will remain the same contant.
+ <img src="./figure_for_readme/template.PNG" alt="Italian Trulli" 
+ width="800" 
+ height="400">
+ </br>
+ #### - Placeholders are allowed to distribute in any page of the powerpoint file.
+ <img src="./figure_for_readme/template2.PNG" alt="Italian Trulli" 
+ width="800" 
+ height="400">
+ </br>
 
-‧如何設置變數(placeholder)：輸入 #(你的變數名稱) 於對應區塊。
-‧新增圖片變數：使用圖形工具拉一個矩形，矩形中面設置變數名稱。
-‧新增文字變數：使用文字工具拉一個文字方塊，方塊中設置變數名稱。
 
 ### 2. Import ppt_recorder from auto_ppt_module.py and load the template silde; after that, you can fill in the information to those pre-defined placeholders. For example:
 ```
