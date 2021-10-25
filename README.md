@@ -1,4 +1,4 @@
-# AutoPPT
+# AutoPPT toolbox
  <img src="./figure_for_readme/autoppt_tieser.PNG" alt="Italian Trulli" 
  width="800" 
  height="400">
