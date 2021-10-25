@@ -7,38 +7,44 @@
 
 # synopsis
  <img src="./figure_for_readme/LOGO.PNG" alt="Italian Trulli" 
- width="200" 
- height="100">
+ width="400" 
+ height="200">
  
-<br>-Requirement：</br>
+## Requirement：</br>
 `conda install -c conda-forge python-pptx` 
 
--Usage：
+## Usage： </br>
 
-1.Create the template silde. (Please take the example template "template.pptx" as reference.)
+### 1.Create the template silde. (Please take the example template "template.pptx" as reference.)
 
 ‧如何設置變數(placeholder)：輸入 #(你的變數名稱) 於對應區塊。
 ‧新增圖片變數：使用圖形工具拉一個矩形，矩形中面設置變數名稱。
 ‧新增文字變數：使用文字工具拉一個文字方塊，方塊中設置變數名稱。
 
-2. Import ppt_recorder from auto_ppt_module.py and load the template silde. example:
-<code>
+### 2. Import ppt_recorder from auto_ppt_module.py and load the template silde; after that, you can fill in the information to those pre-defined placeholders. For example:
+```
 from auto_ppt_module import ppt_recorder
 import numpy as np
 import io
 from PIL import Image
 import copy
+
 # Create ppt recorder given the reference template.
 writer = ppt_recorder(template='template_example.pptx')
+
 # Get the placeholders that you've created in the template file. 
 # Placeholders are formated in dictionary, in which the keys are repected to their name.
 ph = writer.placeholder()
+
 test_image1 = np.eye(128)
 test_image2 = np.random.uniform(low=0.0, high=1.0, size=[64,64,3])
+
 for i in range(3):
+    
     # Duplicate a set of formate respected to your template pptx file.
     # You must include .new_record() in your code even if only one set of your template is needed in your report.
     writer.new_record()
+    
     # Create a placeholder-data dictionary.
     feed_dict={ph['text1']:'Hello World!_'+str(i), 
              ph['pic1']:test_image1,
@@ -49,8 +55,10 @@ for i in range(3):
 
     # Assign your data to pptx file.
     writer.assign(feed_dict=feed_dict)
+
 #export pptx file.
 writer.to_pptx('result.pptx')
-</code>
-‧文字輸入格式：str
-‧圖片輸入格式：3D numpy array (W,H,C), which scaled in [0,1].
+```
+**Notice:**
+<br>‧The input format for word placeholders should be **str**, otherwise the program may not be work correctly. If you would like to put a number here (e.g., float or integer), make sure to convert it into string before placing into the placeholder.</br>
+<br>‧The input format for image placeholders should be a 3D numpy array formatting in (W,H,C) and scaled in [0,1].</br>
