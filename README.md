@@ -1,4 +1,10 @@
 # AutoPPT
+ <img src="./figure_for_readme/autoppt_tieser.PNG" alt="Italian Trulli" 
+ width="600" 
+ height="300">
+ <img src="./figure_for_readme/LOGO.PNG" alt="Italian Trulli" 
+ width="50" 
+ height="25">
 <br>It's again the day before reporting to your boss. Hundreds of thousands of tables and figures are smiling at you, evilly. You pray for rescue; just at that moment, suddenly, you reach this page. Congratulations! You've found AutoPPT, which ganna be your sharpest Knife for experiment reports of all time; following the synopsis below, it'll lead you to a new world. AutoPPT will save your hand from the destruction caused by copy and paste.<br>
 # synopsis
 [使用方法]
