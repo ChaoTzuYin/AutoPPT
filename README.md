@@ -1,1 +1,2 @@
 # AutoPPT
+It's again the day before reporting to your boss. Hundreds of thounsands tabel and figures are smiling at you, evilly. You prey for rescue. Just at this moment, you reach to this page. Congradulations! AutoPPT will save your hand from the distruction caused by copy and paste. AutoPPT, your sharpest Knife for experiment reports; following the synopsis below, it'll lead you to a new world.
