@@ -9,7 +9,7 @@
  <img src="./figure_for_readme/LOGO.PNG" alt="Italian Trulli" 
  width="400" 
  height="200">
- 
+AutoPPT is a simple mudule that helps for display the data into some repeated and unifed format. Users are only required to provide the design template, and than the repeated routine can be simply handel by python codes.
 ## Requirement：</br>
 `conda install -c conda-forge python-pptx` 
 
