@@ -3,7 +3,7 @@
  width="800" 
  height="400">
 
-<br>It's again the day before reporting to your boss. Hundreds of thousands of tables and figures are smiling at you, evilly. You pray for rescue; just at that moment, suddenly, you reach this page. Congratulations! You've found AutoPPT, which is gonna be your sharpest Knife for experiment reports of all time; following the synopsis below, it'll lead you to a new world!! Try it now, let AutoPPT saves your hands from destruction by copy and paste!!!</br>
+<br>It's again the day before reporting to your boss. Hundreds of thousands of tables and figures are smiling at you, evilly. You pray for rescue; just at that moment, suddenly, you reach this page. Congratulations! You've found AutoPPT, which is gonna be your sharpest Knife for experiment reports of all time; following the synopsis below, it'll lead you to a new world!! Try it now, let AutoPPT saves your hands from destruction by copying and pasting!!!</br>
 
 # Synopsis
  <img src="./figure_for_readme/LOGO.PNG" alt="Italian Trulli" 
@@ -70,5 +70,5 @@ for i in range(3):
 writer.to_pptx('result.pptx')
 ```
 **Notice:**
-<br>‧The input format for word placeholders should be **str**, otherwise the program may not be work correctly. If you would like to put a number here (e.g., float or integer), make sure to convert it into string before placing into the placeholder.</br>
+<br>‧The input format for word placeholders should be **str**, otherwise, the program may not work correctly. If you would like to put a number here (e.g., float or integer), make sure to convert it into string before placing it into the placeholder.</br>
 <br>‧The input format for image placeholders should be a 3D numpy array formatting in (W,H,C) and scaled in [0,1].</br>
